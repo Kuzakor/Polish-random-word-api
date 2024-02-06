@@ -48,7 +48,7 @@ fn generate_response(query: &str) -> Json<Response> {
     let mut response = Response{word: String::from("no such word")};
     connection
         .iterate(query, |pairs| {
-            for &(a, value) in pairs.iter() {
+            for &(_, value) in pairs.iter() {
                 response = Response{word: String::from(value.unwrap())};
             }
             true
