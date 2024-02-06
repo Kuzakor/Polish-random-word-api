@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random polish word generator API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Random Polish word generator API</h1>
+    <p>Losowe polskie słowo - API</p>
+    <h2>How to use</h2>
+    <p>Jak używać</p>
+    <ul>
+        <li> Just a random word / Tylko losowe słowo ===>   http://127.0.0.1:8000/word
+        <li> Set length / Ustaw dlugosc (eg. 5 letter / np. 5-literowe) ===>   http://127.0.0.1:8000/word/length/5  </li>
+        <li> Set first couple of letters / Ustaw początek słowa (eg. a / np. a) ===> http://127.0.0.1:8000/word/start/a  </li>
+        <li> Both at the same time / Oba na raz ===> http://127.0.0.1:8000/word/length/5/start/a
+    </ul>
+
+    <h3> The server returns a json file in the following format (eg. banan): {word: "banan"} </h3>
+    <p> Serwer zwraca plik json w nastepujacym formacie (np. banan): {word: "banan"} </p>
+</div>
+</body>
+</html>
